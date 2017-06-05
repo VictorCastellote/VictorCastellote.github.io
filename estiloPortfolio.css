@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	background-color:#232323;
+	background-color:#F0F0F0;
 	}
 .header {
 	padding-left:15%;
@@ -10,12 +10,11 @@ body {
 	position:relative;
 	}
 .logoNav {
-	background-image:url(source/logo200x100.png);
+	background-image:url(source/logoCST.png);
 	position:relative;
-	background-color:lime;
 	width:200px;
 	height:100px;
-	left:25%;
+	left:35%;
 }
 .nav {
 	position:relative;
@@ -30,8 +29,7 @@ body {
 	padding-top:15px;
 	float:left;
 	margin-left:10px;
-	background-color:#484848;
-	
+	background-color:#F0F0F0;
 	width:200px;
 	height:35px;
 	display:inline-block;
@@ -43,16 +41,15 @@ body {
 	width:90%;
 	height:900px;
 	overflow:hidden;
-	background-color:khaki;
+	background-color:#F0F0F0;
 	}
 	
 .footer{
 	text-decoration:none;
-	height:20px;
-	background-color:#484848;
+	height:40px;
+	background-color:#ACACAC;
 	width:50%;
-	margin:10px;
-	padding:1px;
+	margin-top:-50px;
 	text-align: center;
     position:fixed;
 	bottom:0;
@@ -78,24 +75,28 @@ div.tab button {
     cursor: pointer;
     transition: 0.3s;
 }
-.littleimg {
-	width:90px;
-	height:90px;
-	margin-left:-1px;
-	margin-top:2px;
-}
 div.tab button:hover {
-    background-color: #ddd;
+    background-color:#ACACAC;
 }
 
 div.tab button.active {
     background-color: red;
-	border:yellow;
+	border:#00DDFF;
 }
 
 .tabcontent {
 	text-align:center;
-	background-color:lime;
+	background-color:#F0F0F0;
+	position:fixed;
+    display: none;
+	margin-left:300px;
+	margin-top:50px;
+	height:700px;
+	width:1100px;
+	padding: 0px 16px;
+}
+.tabcontent2 {
+	background-color:#F0F0F0;
 	position:fixed;
     display: none;
 	margin-left:300px;
@@ -109,7 +110,7 @@ div.tab button.active {
 }
 .tabcontentVisor {
 	text-align:center;
-	background-color:orange;
+	background-color:#F0F0F0;
 	position:fixed;
     display: none;
 	margin-left:100px;
@@ -117,33 +118,58 @@ div.tab button.active {
 	height:600px;
 	width:960px;
 	padding: 0px 16px;
-    border: 0px solid red;
-    border-top: none;
+    border: none;
 }
 div.visorImg {
 	position:fixed;
 	width:100px;
 	margin-left:0px;
 	height:600px;
+	border-radius:50px;
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #ACACAC;
 }
 
 
 div.visorImg button {
-    background-color: inherit;
+    background-color:inherit;
 	width:100px;
 	height:100px;
-    border: none;
+	border-radius:50px;
+	border:none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 div.visorImg button:hover {
-    background-color: #ddd;
+    background-color: #F0F0F0;
 }
 
 div.visorImg button.active {
-    background-color: red;
+    background-color: #F0F0F0;
+}
+div.visorImg button.active {
+    background-color: #00DDFF;
+}
+.littleimg {
+	width:90px;
+	height:90px;
+	margin-left:-3px;
+	margin-top:2px;
+	border-radius:50px;
+}
+.imagenInicio{
+	height:600px;
+	width:960px;
+	padding: 0px 16px;	
+	}
+	
+	
+.titulo {
+	font-size:18px;
+	color:#535353;
+	}
+.descrip {
+	color:#808080;
 }
